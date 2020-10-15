@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model HomeModel
+
+<p>Session: @ViewBag.example</p>
+<div class="form-group">
+    <form asp-action="BackGroundColor">
+        <label asp-for="ViewBagColor"></label>
+        <input asp-for="ViewBagColor" />
+
+        <label asp-for="ViewDataColor"></label>
+        <input asp-for="ViewDataColor" />
+
+        <label asp-for="TempDataColor"></label>
+        <input asp-for="TempDataColor" />
+
+        <input type="submit" value="Change Color" />
+    </form>
+</div>
+
+
+
